@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spices</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center mx-auto" href="#">
+        <img src="data:image/jpeg;base64,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" alt="Spice Logo" width="40" height="40" class="me-2">
+        <span class="fw-bold text-white">SPICES</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#product">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#CustomerReview">Customer Review</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Address">Address</a></li>
+        </ul>
+        <button class="btn btn-outline-light ms-3">Sign In</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home -->
+  <section id="home" class="text-center py-5">
+    <h1>ORGANIC SPICES</h1>
+    <p>Variety's the very spice of life, that gives it all its flavor.</p>
+    <div class="input-group m-4 w-50 mx-auto"></div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-8">
+          <h1>ABOUT US</h1>
+          <img src="https://www.utphysicians.com/wp-content/uploads/2024/03/spices-article-850.jpg" class="img-fluid my-3">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo alias itaque quasi officiis error, sed dignissimos ipsam nobis voluptatum asperiores, architecto consectetur aut in soluta iure ratione voluptas rem molestias.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section id="product" class="py-5">
+    <div class="container text-center">
+      <h1 class="mb-4">OUR PRODUCTS</h1>
+      <p>Discover our premium selection of authentic Kerala spices and products, carefully sourced and packaged to preserve their natural flavors and aromas.</p>
+      <div class="row justify-content-center">
+        <!-- Product Cards -->
+        <div class="col-md-4">
+          <div class="card my-3">
+            <img src="https://s7ap1.scene7.com/is/image/itcportalprod/shutterstock_2376458851" class="card-img-top">
+            <div class="card-body">
+              <h5>Turmeric Powder</h5>
+              <a href="cart.html" class="btn btn-primary">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card my-3">
+            <img src="https://static.toiimg.com/thumb/msid-106867601,width-400,resizemode-4/106867601.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5>Rice</h5>
+              <a href="cart.html" class="btn btn-primary">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card my-3">
+            <img src="https://d3kgrlupo77sg7.cloudfront.net/media/chococoorgspice.com/images/products/coorg-spices-sarva-sugandi-allspice-berries-jamaica-peppe.20240222011606.webp" class="card-img-top">
+            <div class="card-body">
+              <h5>Pepper</h5>
+              <a href="cart.html" class="btn btn-primary">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card my-3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuq0vCeab4OFGS9PKndgk0YkcASePzkKA9jQ&s" class="card-img-top">
+            <div class="card-body">
+              <h5>Ginger</h5>
+              <a href="cart.html" class="btn btn-primary">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card my-3">
+            <img src="https://www.ibef.org/assets/images/exports/Spices-Industry.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5>Clove</h5>
+              <a href="cart.html" class="btn btn-primary">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card my-3">
+            <img src="https://nuttyyogi.com/cdn/shop/products/Tamarind_DSC5085.jpg?v=1606373598" class="card-img-top">
+            <div class="card-body">
+              <h5>Tamarind</h5>
+              <a href="cart.html" class="btn btn-primary">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-5">
+    <div class="container text-center">
+      <h1>CONTACT US</h1>
+      <img src="C:\Users\Sowmiya Saran\OneDrive\Pictures\Screenshots\Screenshot 2025-07-03 132911.png" class="img-fluid my-3" alt="Contact Image">
+      <form class="mx-auto" style="max-width: 500px;">
+        <input type="text" class="form-control mb-3" placeholder="Enter your name">
+        <input type="email" class="form-control mb-3" placeholder="Enter your mail">
+        <textarea class="form-control mb-3" rows="4" placeholder="Enter your message"></textarea>
+        <button class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Customer Review -->
+  <section id="CustomerReview" class="py-5">
+    <div class="container text-center">
+      <h1>CUSTOMER REVIEW</h1>
+      <img src="C:\Users\Sowmiya Saran\OneDrive\Pictures\Screenshots\Screenshot 2025-07-08 141037.png" class="img-fluid my-3">
+      <img src="C:\Users\Sowmiya Saran\OneDrive\Pictures\Screenshots\Screenshot 2025-07-08 141657.png" class="img-fluid my-3">
+      <img src="C:\Users\Sowmiya Saran\OneDrive\Pictures\Screenshots\Screenshot 2025-07-08 142741.png" class="img-fluid my-3">
+    </div>
+  </section>
+
+  <!-- Address -->
+  <section id="Address" class="py-5 bg-light">
+    <div class="container text-center">
+      <h1>ADDRESS</h1>
+      <p>Karur</p>
+      <h2>Open hours</h2>
+      <p>Monday - Friday: 8.00 AM - 8.00 PM<br>Saturday - Sunday: 2.00 PM - 8.00 PM</p>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
